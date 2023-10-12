@@ -18,6 +18,12 @@ body {
    max-width: 1440px;
 }
 
+a {
+   text-decoration-line: none;
+   color: var(--rose-quartz);
+   border-bottom: 1px solid mediumspringgreen;
+}
+
 header {
    text-align: center;
    padding: 2.5em 1em;
