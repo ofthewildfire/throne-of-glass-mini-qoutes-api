@@ -94,3 +94,9 @@ h2 {
    color: var(--rose-quartz);
    font-size: 2rem;
 }
+
+footer {
+   background-color: var(--onyx);
+   padding: 1em 2em;
+   text-align: center;
+}
