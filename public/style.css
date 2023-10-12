@@ -99,6 +99,8 @@ footer {
    background-color: var(--onyx);
    padding: 1em 2em;
    text-align: center;
+   display: grid;
+   gap: .5em;
 }
 
 footer>a {
