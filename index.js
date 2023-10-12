@@ -132,5 +132,11 @@ app.get("/quotes", (req, res) => {
 	res.json(bookQuotes)
 })
 
+app.get("/random", (req, res) => {
+	let r = Math.floor(Math.random() * 22)
+	console.log(+r)
+	res.json(bookQuotes[r])
+})
+
 const PORT = 8000
 app.listen(process.env.PORT || PORT)
