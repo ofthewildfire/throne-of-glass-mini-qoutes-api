@@ -102,6 +102,7 @@ footer {
    display: grid;
    gap: .5em;
    margin-top: .5em;
+   color: var(--beige);
 }
 
 footer>a {
