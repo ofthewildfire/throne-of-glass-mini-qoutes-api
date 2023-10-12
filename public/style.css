@@ -100,3 +100,11 @@ footer {
    padding: 1em 2em;
    text-align: center;
 }
+
+footer>a {
+   border: none;
+}
+
+footer>a>svg:is(:hover, :active, :focus) {
+   fill: rgba(60, 179, 114, 0.589);
+}
