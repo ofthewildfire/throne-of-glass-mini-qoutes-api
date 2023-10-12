@@ -103,6 +103,7 @@ footer {
 
 footer>a {
    border: none;
+   font-size: 1.5rem;
 }
 
 footer>a>svg:is(:hover, :active, :focus) {
