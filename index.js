@@ -110,9 +110,7 @@ const bookQuotes = {
 		quote: "Lets go rattle the stars.",
 		book: "Queen of Shadows",
 	},
-	notFound: {
-		error: "No qoutes from this book!",
-	},
+	
 }
 
 app.get("/", (req, res) => {
@@ -124,7 +122,9 @@ app.get("/quotes/:id", (req, res) => {
 	if (bookQuotes[id]) {
 		res.json(bookQuotes[id])
 	} else {
-		res.json(bookQuotes["notFound"])
+		res.json({
+      error: "No quotes from this book!",
+    })
 	}
 })
 
@@ -133,10 +133,13 @@ app.get("/quotes", (req, res) => {
 })
 
 app.get("/random", (req, res) => {
-	let r = Math.floor(Math.random() * 22)
+	// Get random from 1 to number of quotes!
+  let r = Math.floor(Math.random() * Object.keys(bookQuotes).length + 1)
 	console.log(+r)
 	res.json(bookQuotes[r])
 })
 
-const PORT = 8000
-app.listen(process.env.PORT || PORT)
+const PORT = process.env.PORT || 8000
+app.listen(PORT, () => {
+  console.log(`Listening on port ${PORT}`)
+})
