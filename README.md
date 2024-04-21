@@ -31,6 +31,7 @@ This API is hosted on Cyclic at [link to Cyclic deployment].
 {
   "quote": "Her mother placed a phantom hand over Aelin’s heart. It is the strength of this that matters. No matter where you are, no matter how far, this will lead you home."
 }
+```
 
 ## Error Handling:
 
